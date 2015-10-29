@@ -3,7 +3,7 @@
 [![npm][npm-image]][npm-url]
 [![downloads][downloads-image]][downloads-url]
 
-[travis-image]: https://img.shields.io/travis/feross/standard.svg?style=flat
+[travis-image]: https://travis-ci.org/feross/standard.svg?branch=master
 [travis-url]: https://travis-ci.org/feross/standard
 [npm-image]: https://img.shields.io/npm/v/standard.svg?style=flat
 [npm-url]: https://npmjs.org/package/standard
@@ -49,13 +49,13 @@ npm install standard
 [1]: http://blog.izs.me/post/2353458699/an-open-letter-to-javascript-leaders-regarding
 [2]: http://inimino.org/~inimino/blog/javascript_semicolons
 [3]: https://www.youtube.com/watch?v=gsfbh17Ax9I
-[4]: RULES.md#automatic-semicolon-insertion-asi
+[4]: RULES.md#semicolons
 [5]: RULES.md#javascript-standard-style
 
 To get a better idea, take a look at
 [a sample file](https://github.com/feross/bittorrent-dht/blob/master/client.js) written
 in JavaScript Standard Style, or check out some of
-[the repositories](https://github.com/feross/standard/blob/master/test/clone.js) that use
+[the repositories](https://github.com/feross/standard-packages/blob/master/standard.json) that use
 `standard`.
 
 ## Badge
@@ -69,10 +69,10 @@ let people know that your code is using the standard style.
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 ```
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 
 ```markdown
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 ```
 
 ## Usage
@@ -123,10 +123,12 @@ For automatic formatting on save, install **[StandardFormat][sublime-4]**.
 
 Install **[linter-js-standard][atom-1]**.
 
-For automatic formatting, install **[standard-formatter][atom-2]**.
+For automatic formatting, install **[standard-formatter][atom-2]**. 
+For snippets, install **[atom-standardjs-snippets][atom-3]**.
 
 [atom-1]: https://atom.io/packages/linter-js-standard
 [atom-2]: https://atom.io/packages/standard-formatter
+[atom-3]: https://atom.io/packages/standardjs-snippets
 
 #### [Vim](http://www.vim.org/)
 
@@ -246,7 +248,7 @@ The paths `node_modules/**`, `*.min.js`, `bundle.js`, `coverage/**`, hidden file
 (beginning with `.`), and all patterns in a project's root `.gitignore` file are
 automatically ignored.
 
-Sometimes you need to ignore additional folders or specific minfied files. To do that, add
+Sometimes you need to ignore additional folders or specific minified files. To do that, add
 a `standard.ignore` property to `package.json`:
 
 ```json
@@ -418,7 +420,7 @@ There's also [standard-tap](https://www.npmjs.com/package/standard-tap), [standa
 - **[snazzy](https://github.com/feross/snazzy)** - pretty terminal output for standard
 - **[semistandard](https://github.com/Flet/semistandard)** - standard, with semicolons (if you must)
 
-There are also many [editor plugins](https://github.com/feross/standard#text-editor-plugins).
+There are also many [editor plugins](https://github.com/feross/standard#text-editor-plugins) and other [awesome standard packages](https://github.com/feross/awesome-standard).
 
 ## Node.js API
 
